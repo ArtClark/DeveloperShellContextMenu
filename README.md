@@ -1,24 +1,46 @@
-﻿🛠️ **Developer Shell Context Menu Manager**
- 
-A lightweight, file-less utility to add Visual Studio Developer Shell or .NET SDK shortcuts to your Windows right-click menu.
+# 🛠️ Developer Shell Context Menu Manager
+![Version](https://img.shields.io/badge/version-0.4.1-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
-✨ **Features**
-Intelligent Detection: Automatically finds Visual Studio installations on any drive using vswhere.exe.
+A lightweight, file-less utility to add **Visual Studio Developer Shell** or **.NET SDK** shortcuts to your Windows right-click menu.
 
-VS Code Friendly: Provides a standalone .NET SDK Shell option if you don't have the full Visual Studio IDE installed.
+---
 
-Visual Status: Shows at a glance if a menu item is installed (✔), missing (✘), or needs an update (↑).
+## ✨ Features
+* **Intelligent Detection**: Automatically finds Visual Studio installations on any drive using `vswhere.exe`.
+* **VS Code Friendly**: Provides a standalone `.NET SDK Shell` option if you don't have the full Visual Studio IDE installed.
+* **Visual Status**: Shows at a glance if a menu item is installed (✔), missing (✘), or needs an update (↑).
+* **Zero Litter**: No files are left on your system. All logic is stored in the Windows Registry.
+* **Native Management**: Appears in **Windows Settings > Apps** for easy uninstallation or remote updating.
 
-Zero Litter: No files are left on your system. All logic is stored in the Windows Registry.
+---
 
-Native Management: Appears in Windows Settings > Apps for easy uninstallation or remote updating.
+## 🚀 How to Use
 
-🚀 **How to Use**
-Run the following command in an Administrative PowerShell window:
+> [!IMPORTANT]
+> This script must be run in **Administrator mode** because it performs system-wide registry tweaks.
 
-PowerShell
-irm "https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/refs/heads/main/VsDevShellManager.ps1" | iex
-🔄 Updating & Uninstalling
+1. Right-click the Start menu and choose **Terminal (Admin)** or **PowerShell (Admin)**.
+2. Paste the following command and press Enter:
+
+```powershell
+irm "(https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/refs/heads/main/VsDevShellManager.ps1)" | iex
+```
+---
+
+## 🔄 Updating & Uninstalling
 To Update: Simply re-run the launch command above, or find the app in Windows Settings and click Modify.
 
 To Uninstall: Use the script's internal menu (Option 4) or find "Developer Shell Context Menus (Art Clark)" in your Windows Installed Apps list and click Uninstall.
+
+---
+
+## 🛠️ Build & Develop
+Get a copy of the source code, this can be done using GitHub UI (`Code -> Download ZIP`), or by cloning (downloading) the repo using git.
+
+If git is installed, run the following commands under a PowerShell window to clone and move into project's directory:
+```powershell
+git clone --depth 1 "https://github.com/ArtClark/DeveloperShellContextMenu.git"
+cd DeveloperShellContextMenu
+```
