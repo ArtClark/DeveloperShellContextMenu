@@ -21,8 +21,16 @@ A lightweight, file-less utility to add **Visual Studio Developer Shell** or **.
 > [!IMPORTANT]
 > This script must be run in **Administrator mode** because it performs system-wide registry tweaks.
 
-1. Right-click the Start menu and choose **Terminal (Admin)** or **PowerShell (Admin)**.
-2. Paste the following command and press Enter:
+1. **Open an Elevated Terminal:**
+   * **Start menu Method:**
+     * Right-click on the Start menu.
+     * Choose **Windows PowerShell (Admin)** (Windows 10) or **Terminal (Admin)** (Windows 11).
+   * **Search Method:**
+     * Press the **Windows Key**, type `PowerShell`.
+     * Press `Ctrl + Shift + Enter` to launch as Administrator.
+
+2. **Run the Command:**
+   Paste the following command and press Enter:
 
 ```powershell
 irm "(https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/refs/heads/main/VsDevShellManager.ps1)" | iex
