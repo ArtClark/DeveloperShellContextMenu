@@ -1,5 +1,6 @@
 # 🛠️ Developer Shell Context Menu Manager
-![Version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/main/version.json)![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/main/version.json)
+![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
 A lightweight, file-less utility to add **Visual Studio Developer Shell** or **.NET SDK** shortcuts to your Windows right-click menu.
@@ -32,7 +33,7 @@ A lightweight, file-less utility to add **Visual Studio Developer Shell** or **.
    Paste the following command and press Enter:
 
 ```powershell
-irm "(https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/refs/heads/main/VsDevShellManager.ps1)" | iex
+irm "https://raw.githubusercontent.com/ArtClark/DeveloperShellContextMenu/refs/heads/main/VsDevShellManager.ps1" | iex
 ```
 ---
 
